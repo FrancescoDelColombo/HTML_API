@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ITS Project - Contacts</title>
+
+    <link rel="stylesheet" href="styles\style.css">
+    <link rel="stylesheet" href="styles\popup.css">
+    <link rel="icon" type="image/x-icon" href="img\logoipsum-357.png">
+</head>
+
+<body>
+    <div id="popup">Operazione eseguita con successo!</div>
+    
+    <section class="navbar">
+        <div class="logo">
+            <a href="/">
+                <img src="img\logoipsum-356.png" alt="LOGO">
+            </a>
+            <button class="menu-toggle" onclick="toggleMenu()">
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="feather feather-menu"
+                    >
+                    <line x1="3" y1="12" x2="21" y2="12"/>
+                    <line x1="3" y1="6" x2="21" y2="6"/>
+                    <line x1="3" y1="18" x2="21" y2="18"/>
+                </svg>
+            </button>
+        </div>
+        <div class="nav-links">
+            <a href="/index.html" alt="Home Page">Home</a>
+            <a href="about.html" alt="About Page">About</a>
+            <a class="active" href="/contacts.html" alt="Contact Page">Contacts</a>
+        </div>
+    </section>
+
+    <div class="contact-form">
+        <form action="" id="contact-form">
+            <div class="form-controls">
+                <input id="name" name="name" placeholder="Your name"/>
+                <label for="name">Name</label>
+            </div>
+            
+            <div class="form-controls">
+                <input id="lastname" name="lastname" placeholder="Your lastname"/>
+                <label for="lastname">LastName</label>
+            </div>
+
+            <div class="form-controls">
+                <input type="email" id="email" name="email" placeholder="Your E-Mail"/>
+                <label for="email">E-Mail</label>
+            </div>
+
+            <div class="form-controls">
+                <input type="date" id="DOB" name="DOB" placeholder="Your Birthday"/>
+                <label for="DOB">Birthday</label>
+            </div>
+            
+            <div class="form-controls">
+                <textarea name="message" id="message" cols="15" row="5"></textarea>
+            </div>
+            
+            <div class="form-checkbox">
+                <input type="checkbox" name="consents" id="consents">
+                <p>Accetta la politica sulla privacy</p>
+            </div>
+            
+            <input class="send-form" type="submit" value="Send Message"
+            id="send-form-button" disabled/>
+
+        </form>
+        <script src="scripts\script.js"></script>
+    </div>
+</body>
+</html>
