@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="/styles/recipes.css" />
+  </head>
+  <body>
+    <section class="navbar">
+      <div class="logo">
+        <a href="/">
+          <img src="/img/logo.png" alt="Logo" />
+        </a>
+        <button class="menu-toggle" onclick="toggleMenu()">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="feather feather-menu"
+          >
+            <line x1="3" y1="12" x2="21" y2="12" />
+            <line x1="3" y1="6" x2="21" y2="6" />
+            <line x1="3" y1="18" x2="21" y2="18" />
+          </svg>
+        </button>
+      </div>
+      <div class="nav-links">
+        <a href="/" alt="Home page">Home</a>
+        <a href="/about.html" alt="About page">About</a>
+        <a class="page-active" href="/contact.html" alt="Contact page"
+          >Contacts</a
+        >
+        <a href="/recipes.html" alt="Contact page">Recipes</a>
+      </div>
+    </section>
+    <section class="recipes">
+
+      <h1>Recipes</h1>
+      <div id="recipes-container"></div>
+      <button id="prev-btn">Previous</button>
+<button id="next-btn">Next</button>
+    </section>
+    <script src="/scripts/recipes.js"></script>
+  </body>
+</html>

@@ -4,12 +4,10 @@ const resultsPerPage = 10;
 function loadRecipes(page) {
   const offset = page * resultsPerPage;
 
-  fetch(`https://api.spoonacular.com/recipes/complexSearch?number=${resultsPerPage}&offset=${offset}`, {
+  fetch('https://dogapi.dog/api/v2/breeds',{
     method: "GET",
-    headers: {
-      "x-api-key": "4158b8f83d194e6991a5b7e753df6aea"
-    }
   })
+  
     .then((response) => response.json())
     .then((data) => {
       const container = document.getElementById("recipes-container");
